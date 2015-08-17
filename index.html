@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Byggkontot</title>
+		<title>Pristine Carwash</title>
 		<meta name="description" content="Write words about the website" />
 		<meta name="keywords" content=" portfolio, web design" />
 		<!-- Bootstrap -->
@@ -37,6 +37,49 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+<!-- <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(51.583879, -0.560364),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>-->
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(51.583879, -0.560364);
+  var mapOptions = {
+    zoom: 17,
+    center: myLatlng
+
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Pristine Carwash'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+
+
+
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -48,22 +91,224 @@
 				<div class="texture-overlay"></div>
 				<div class="container">
 					<div class="row nav-wrapper">
-						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
-							<a href="#"><img src="img/byggfinito.png" alt="Byggkontot"></a>
-						</div>
-						<!--<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
-						</div>-->
+						<div class="col-md-3 ">
+							<a href="#"><img width="40%" height="40%" src="img/pristine.png" alt="Pristine Carwash"></a>
+							</div>
 					</div>
-					<div class="row hero-content">
-						<div class="col-md-12">
-							<h1 class="animated fadeInDown">Byggkontot - var liten men bli behandlad som stor!</h1>
-							<a href="#anslut" class="use-btn animated fadeInUp">Anslut dig direkt!</a> <a href="#features" class="learn-btn animated fadeInUp">Läs mer<i class="fa fa-arrow-down"></i></a>
+
+		<div class="row hero-content">
+						<div class="col-md-6">
+							<h1 class="animated fadeInDown">Pristine Car Wash</h1>
+							<h2>Get your 7th carwash for free!</h2>
+						</div>
+
+</div>
+						<section>
+			<div class="container-fluid">
+						<div id="wash" class="col-md-3">
+							<h2 class="animated fadeInDown">1. Standard Wash</h2>
+							<ul>
+								<li>Hand wash</li>
+								<li>Hyper Wax</li>
+								<li>Dry Windows Outside</li>
+								<li>Vacuum Door Shunts Cleaned</li>
+								<li>Wheels Cleaned</li>
+								<li>Tyre Shine</li>
+							</ul>
+							<p>Car £5.99 - MPV/4x4 £7.99</p>
+						</div>	
+						<div id="wash" class="col-md-3">
+							<h2 class="animated fadeInDown">2. Superior Wash</h2>
+							<ul>
+								<li>Hand wash</li>
+								<li>Hyper Wax</li>
+								<li>Dry Windows Inside & Out</li>
+								<li>Vacuum Door Shunts Cleaned</li>
+								<li>Wheels Cleaned</li>
+								<li>Tyre Shine</li>
+								<li>Dashboard Polished</li>
+							</ul>
+							<p>Car £11.99 - MPV/4x4 £15.00</p>
+						</div>
+
+							<div id="wash" class="col-md-3">
+							<h2 class="animated fadeInDown">3. Mini Valet</h2>
+							<ul>
+								<li>Hand wash</li>
+								<li>Hyper Wax</li>
+								<li>Dry Windows Inside & Out</li>
+								<li>Vacuum Door Shunts and Panels Cleaned</li>
+								<li>Wheels Cleaned</li>
+								<li>Tyre Shine</li>
+								<li>Dashboard Polished</li>
+								<li>Detailed plastic trim</li>
+								<li>Refreshen seats</li>
+								<li>Wheels cleaned</li>
+								<li>Dashboard Polished</li>
+								<li>Air Freshner and Paper mats</li>
+							</ul>
+							<p>Car £19.99 - MPV/4x4 24.99</p>
+						</div>
+						<div id="wash" class="col-md-3">
+							<h2 class="animated fadeInDown">4. Wax & Polish</h2>
+							<ul>
+								<li>Hand wash</li>
+								<li>Hyper Wax</li>
+								<li>Dry Windows Inside & Out</li>
+								<li>Vacuum Door Shunts Cleaned</li>
+								<li>Wheels Cleaned</li>
+								<li>Tyre Shine</li>
+								<li>Dashboard Polished</li>
+								<li>Bumper Shine</li>
+								<li>Detailed Hand Polish Bodywork</li>
+								<li>Air Freshner and Paper mats</li>
+							</ul>
+							<p>Car £35.00 - MPV/4x4 £45.00</p>
+						</div>	
+						<div id="wash" class="col-md-4">
+							<h2 class="animated fadeInDown">5. Full Valet</h2>
+							<ul>
+								<li>Hand wash</li>
+								<li>Hyper Wax & Dry</li>
+								<li>Windows Inside & Out</li>
+								<li>Vacuum Door Shunts & Panels Cleaned</li>
+								<li>Wheels Cleaned</li>
+								<li>Tyre Shine</li>
+								<li>Dashboard Polished</li>
+								<li>Detailed plastic trim</li>
+								<li>Refreshen seats</li>
+								<li>Wheels cleaned</li>
+								<li>Dashboard Polished</li>
+								<li>Cloth Seats Shampooed</li>
+								<li>Leather seats Conditioned</li>
+								<li>Full Detailed Interior Valet</li>
+								<li>Bumper Shine</li>
+								<li>Detailed Hand Polished Bodywork</li>
+								<li>Engine Wax</li>
+								<li>Air Freshner and Paper mats</li>
+							</ul>
+							<p>Car £75.00 - MPV/4x4 £85.00</p>
+						</div>
+							<div id="wash" class="col-md-4">
+							<h2 class="animated fadeInDown">6. Van Wash Small </h2>
+							<ul>
+								<p>Van wash Small - Outside £9.99</p>
+								<p>Van wash Small - In & Out £14.99</p>
+								<p>Van wash Large - Outside £14.99</p>
+								<p>Van wash Large - In & Out £19.99</p>
+
+							</ul>
+						
+						</div>
+						<div id="wash" class="col-md-4">
+							<h2 class="animated fadeInDown">7. Interior Valet</h2>
+							<ul>
+							<li>Hand wash </li>
+							<li>Hyper wax & dry </li>
+							<li>Windows Inside & out</li>
+							<li>Vacuum </li>
+							<li>Door Shunts & Panels Cleaned</li> 
+							<li>Dashboard Polished </li>
+							<li>Cloth Seats Shampooed </li>
+							<li>Leather Seats Conditioned</li>
+							<li>Full Detailed Interior Valet</li> 
+							<li>Bummper Shine</li>
+							<li>Wheels Cleaned</li>
+							<li>Tyre Shine </li>
+							<li>Air Freshner & Paper mats</li>
+						</ul>
+						<p>Car £55.00 - MPV/4x4 £65.00</p>
+						</div>
+
+					</div>				
+</section>
+</div>
+			</section>
+		</header>
+
+
+
+
+		
+		<section class="features-list" id="features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="col-md-4 feature-1 wp2">
+							<div class="feature-icon">
+								<i class="fa fa-pencil"></i>
+							</div>
+							<div class="feature-content">
+								<h1>Drop off</h1>
+								<p>Drop off your car and pick at time suited to your schedule</p>
+								
+							</div>
+						</div>
+						<div class="col-md-4 feature-2 wp2 delay-05s">
+							<div class="feature-icon">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="feature-content">
+								<h1>Customer Satisfaction</h1>
+								<p>100% Customer Satisfaction</p>
+								
+							</div>
+						</div>
+						<div class="col-md-4 feature-3 wp2 delay-1s">
+							<div class="feature-icon">
+								<i class="fa fa-heart"></i>
+							</div>
+							<div class="feature-content">
+								<h1>Washed with love</h1>
+								<p>Your car is in good hands, we love cars and take care of them accordingly</p>
+								<!--<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>-->
+							</div>
 						</div>
 					</div>
 				</div>
+			</div>		
+</section>
+
+<section class="features-intro">
+
+		<div  class="container">	
+<div id="map-canvas"> </div>					
+<div id="contact">
+<h2>Oxford Road, Gerrard Cross - Buckinghamshire SL9 7BB, London. Phone: 07568 301768 / 07462 619718<h2>
+
+					</div>
+				</div>
+		
+
+</section>
+
+
+<section class="screenshots-intro">
+<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+				
+						<img src="img/pristinesmall.png" alt="Footer Logo Blue">
+				
+						<p>© Pristine Carwash Valeting Centre LTD</p> <!--- <a href="http://tympanus.net/codrops/licensing/">Licence</a> - Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>-->
+					</div>
+					<div class="col-md-7">
+					
+							<li><img src="img/icons/visa-electron-curved-32px.png" alt="electron"></li>
+							<li><img src="img/icons/visa-curved-32px.png" alt="visa"></li>
+							<li><img src="img/icons/mastercard-curved-32px.png" alt="master"></li>
+							<li><img src="img/icons/maestro-curved-32px.png" alt="maestro"></li>
+							<li><img src="img/icons/solo-curved-32px.png" alt="solo"></li>
+			
+					</div>
+				</div>
+			</div>
+		</footer>
+
 			</section>
-		</header>
+		
 	<!--	<section class="video" id="about">
 			<div class="container">
 				<div class="row">
@@ -110,46 +355,7 @@
 				</div>
 			</div>
 		</section> -->
-		<section class="features-list" id="features">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-
-						<div class="col-md-4 feature-1 wp2">
-							<div class="feature-icon">
-								<i class="fa fa-pencil"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Anslut</h1>
-								<p>Anslut dig till byggkontot.</p>
-								
-							</div>
-						</div>
-						<div class="col-md-4 feature-2 wp2 delay-05s">
-							<div class="feature-icon">
-								<i class="fa fa-user"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Kreditupplysning</h1>
-								<p>Byggkontot gör en kreditupplysning och godkänner därefter.</p>
-								
-							</div>
-						</div>
-						<div class="col-md-4 feature-3 wp2 delay-1s">
-							<div class="feature-icon">
-								<i class="fa fa-heart"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Redo för rabatter!</h1>
-								<p> <a href="#">Nu är det bara att handla till rabatter endast stora företag har tillgång till!</a></p>
-								<!--<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>-->
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
+		
 
 		<!--
 		<section class="showcase">
@@ -204,49 +410,9 @@
 				</div>
 			</div>
 		</section>-->
-		
-		<section class="download" id="anslut">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center wp4">
-						<h1>Anslut dig redan idag</h1>
-						<a href="#" class="download-btn">Anslut mitt företag till Byggkontot! <i class="fa fa-thumbs-up"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<h1 class="footer-logo">
-						<img src="img/logo-blue.png" alt="Footer Logo Blue">
-						</h1>
-						<p>© Boxify 2015 - <a href="http://tympanus.net/codrops/licensing/">Licence</a> - Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>
-					</div>
-					<div class="col-md-7">
-						<ul class="footer-nav">
-							<li><a href="#about">About</a></li>
-							<li><a href="#features">Features</a></li>
-							<li><a href="#screenshots">Screenshots</a></li>
-							<li><a href="#download">Download</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>-->
-		<div class="overlay overlay-boxify">
-			<nav>
-				<ul>
-					<li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
-					<li><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
-				</ul>
-				<ul>
-					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
-					<li><a href="#download"><i class="fa fa-download"></i>Download</a></li>
-				</ul>
-			</nav>
-		</div>
+
+
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

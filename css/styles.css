@@ -52,6 +52,7 @@ html {
     font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
+
 }
 
 /*
@@ -65,6 +66,8 @@ html, button, input, select, textarea {
 html, body {
     overflow-x: hidden;
     width: 100%;
+     background: rgb(0, 0, 100) url('../img/background.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 /*
@@ -79,7 +82,7 @@ body {
 * Font Smoothing
 */
 html, html a {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.104);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -113,7 +116,8 @@ Typography
 
 h1 {
     margin: 0.67em 0;
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: 400;
 }
 h2 {
     margin: 0.83em 0;
@@ -147,7 +151,7 @@ abbr[title] {
 * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
 */
 b, strong {
-    font-weight: bold
+    font-weight: bolder;
 }
 blockquote {
     margin: 0px
@@ -172,7 +176,7 @@ mark {
 * Addresses margins set differently in IE 6/7.
 */
 p, pre {
-    margin: 1em 0
+    margin: 2em 0
 }
 
 /*
@@ -449,11 +453,12 @@ p {
     line-height: 25px;
 }
 a {
-    color: #73d0da
+    color: #000099;
 }
 a:hover, a:focus {
-    color: #73d0da;
+    color: #fff;
     text-decoration: none;
+    font-weight: 700;
 }
 .texture-overlay {
     position: absolute;
@@ -462,6 +467,7 @@ a:hover, a:focus {
     width: 100%;
     height: 100%;
     background-image: url(../img/grid.png);
+
 }
 
 /* ==========================================================================
@@ -579,10 +585,9 @@ Hero
 ========================================================================== */
 .hero {
     position: relative;
-    padding: 60px 0 60px 0;
+    padding: 40px 0 40px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('../img/newimage.jpg') no-repeat center center;
-    background-size: cover;
+    width:30%;
     color: #fff;
 }
 .hero h1 {
@@ -710,30 +715,45 @@ Features Slider
 /* ==========================================================================
 Features List
 ========================================================================== */
+.col-md-4 {
+     background: rgba(0, 80, 140, 0.6);
+
+     padding:1%;
+
+
+}
+
 .features-list {
-    padding: 130px 0
+    padding: 20px 0
+
 }
 .features-list h1 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #24374b;
-    font-size: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
 }
 .features-list p {
     margin-bottom: 20px;
-    color: #778899;
+    color: #fff;
+    font-weight: 400;
+    font-size:18px;
 }
 .feature-content {
     display: inline-block;
     margin-left: 0;
     width: 65%;
+
+   
+
 }
 .feature-icon {
     display: inline-block;
     margin-right: 25px;
     width: 90px;
     height: 90px;
-    border: solid 2px #4e9ba3;
+    border: solid 2px #fff;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
@@ -741,7 +761,7 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: #4e9ba3
+    color: #fff;
 }
 
 /* ==========================================================================
@@ -827,8 +847,8 @@ Showcase
 Screenshots Intro
 ========================================================================== */
 .screenshots-intro {
-    padding: 170px 0 100px 0;
-    background-color: #f6f7f9;
+    padding: 40px 0 40px 0;
+     background: rgba(0, 80, 140, 0.6);
 }
 .screenshots-intro h1 {
     margin-bottom: 20px;
@@ -945,10 +965,12 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-    padding: 100px 0
+    padding-top: 0%;
+   
+
 }
 footer p {
-    color: #c7cacc;
+    color: #fff;
     font-size: 12px;
 }
 footer ul {
@@ -967,6 +989,7 @@ footer li a {
 footer li:last-child {
     margin-right: 0
 }
+
 
 /* ==========================================================================
 Nav Overlay
@@ -1091,3 +1114,33 @@ Waypoints
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
+  #map-canvas {
+        width: 100%;
+        height: 400px;
+
+      }
+
+#contact {
+ background-color:rgba(0,80,140,0.6);  
+ padding:1%;
+ margin-bottom:5%;
+color:#fff;
+ width:100%;
+}
+
+
+#wash{
+border:1px dotted white;
+ background-color:rgba(0,80,140,0.6);  
+ min-height: 550px;
+}
+
+#wash ul {
+list-style-type: square;
+padding-left:4%;
+
+}
+
+
+
