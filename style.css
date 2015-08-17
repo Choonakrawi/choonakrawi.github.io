@@ -1307,10 +1307,13 @@ img {
   max-width: 100%;
 }
 .banner {
-  background: url(img/hero.jpg) 0 0 no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url(img/hero.jpg) 0 0 no-repeat;
   background-size: cover;
   text-align: center;
 }
+
+
+
 .banner-lead:after {
   width: 270px;
   background-position: 50% 50%;
@@ -1608,6 +1611,16 @@ img {
   width: 100px;
   height: 100px;
 }
+
+.feature-image2 {
+  display: inline-block;
+  margin: 0 5px;
+  border: 5px solid #494d4e;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
 .ingredients-block.active {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
